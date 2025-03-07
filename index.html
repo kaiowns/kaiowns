@@ -5,62 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kaiowns</title>
     <style>
+        /* Dark Aesthetic Background */
         body {
-            background: url('https://source.unsplash.com/1600x900/?aesthetic') no-repeat center center fixed;
+            background: url('https://source.unsplash.com/1600x900/?dark,neon') no-repeat center center fixed;
             background-size: cover;
-            color: white;
+            color: #fff;
             text-align: center;
             font-family: Arial, sans-serif;
         }
+
+        /* Profile Picture */
         .profile-pic {
             width: 120px;
             height: 120px;
             border-radius: 50%;
             object-fit: cover;
-            border: 3px solid white;
-            margin-top: 20px;
+            border: 3px solid #fff;
+            margin-top: 30px;
         }
+
+        /* Name */
+        h1 {
+            margin: 10px 0;
+            font-size: 28px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Buttons */
         .container {
-            margin-top: 50px;
+            margin-top: 30px;
         }
+
         .btn {
             display: block;
-            width: 200px;
+            width: 220px;
             margin: 10px auto;
-            padding: 10px;
+            padding: 12px;
             background: rgba(255, 255, 255, 0.1);
-            border: 1px solid white;
-            border-radius: 5px;
+            border: 1px solid #fff;
+            border-radius: 8px;
             text-decoration: none;
-            color: white;
+            color: #fff;
+            font-size: 18px;
             font-weight: bold;
+            text-transform: uppercase;
+            transition: 0.3s;
         }
+
         .btn:hover {
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.3);
         }
+
+        /* Audio Controls */
         .audio-controls {
             margin-top: 20px;
         }
+
         #playPauseBtn {
             background: rgba(255, 255, 255, 0.1);
-            border: 1px solid white;
-            color: white;
+            border: 1px solid #fff;
+            color: #fff;
             padding: 10px 20px;
             cursor: pointer;
-            border-radius: 5px;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        #playPauseBtn:hover {
+            background: rgba(255, 255, 255, 0.3);
         }
     </style>
 </head>
 <body>
+    <!-- Profile Picture -->
     <img src="https://raw.githubusercontent.com/kaiowns/kaiowns/refs/heads/main/489636305935ca28a5a1c965cd70c527.png" alt="Profile Picture" class="profile-pic">
+    
+    <!-- Name -->
     <h1>kai</h1>
 
+    <!-- Social Links -->
     <div class="container">
         <a href="https://www.tiktok.com/@kaiowns_?_t=ZS-8uTcIDZv52m&_r=1" class="btn">TikTok</a>
         <a href="https://www.instagram.com/kaiowns_?igsh=bjRkcWU3ZWh2Mzd4" class="btn">Instagram</a>
         <a href="https://discord.gg/uzixil" class="btn">Discord Server</a>
     </div>
 
+    <!-- Music Controls -->
     <div class="audio-controls">
         <button id="playPauseBtn">Pause</button>
         <audio id="bgMusic" autoplay loop>
