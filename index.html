@@ -4,18 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kaiowns</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            margin-bottom: 15px;
+        }
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .bio {
+            font-size: 16px;
+            color: #ccc;
+            margin-bottom: 20px;
+            width: 80%;
+            max-width: 400px;
+        }
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .social-button {
+            background-color: transparent;
+            color: #fff;
+            border: 2px solid #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: 0.3s;
+            width: 200px;
+        }
+        .social-button:hover {
+            background-color: #fff;
+            color: #000;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <img src="https://raw.githubusercontent.com/kaiowns/kaiowns/refs/heads/main/489636305935ca28a5a1c965cd70c527.png" alt="Profile Picture" class="profile-pic">
-        <h1>kai</h1>
-        <p class="bio">only skibidi sigmas are allowed in my circle🐺.</p>
-        <div class="socials">
-            <a href="https://www.tiktok.com/@kaiowns_?_t=ZS-8uTcIDZv52m&_r=1" target="_blank">TikTok</a>
-            <a href="https://www.instagram.com/kaiowns_?igsh=bjRkcWU3ZWh2Mzd4" target="_blank">Instagram</a>
-            <a href="https://discord.gg/uzixil" target="_blank">Discord Server</a>
-        </div>
+
+<div class="container">
+    <img src="https://raw.githubusercontent.com/kaiowns/kaiowns/refs/heads/main/489636305935ca28a5a1c965cd70c527.png" alt="Profile Picture" class="profile-pic">
+    
+    <div class="name">kai</div>
+    <div class="bio">only skibidi sigmas are allowed in my circle🐺.</div>
+    
+    <div class="social-links">
+        <a href="https://www.tiktok.com/@kaiowns_?_t=ZS-8uTcIDZv52m&_r=1" class="social-button" target="_blank">TikTok</a>
+        <a href="https://www.instagram.com/kaiowns_?igsh=bjRkcWU3ZWh2Mzd4" class="social-button" target="_blank">Instagram</a>
+        <a href="https://discord.gg/uzixil" class="social-button" target="_blank">Discord Server</a>
     </div>
+</div>
+
 </body>
 </html>
