@@ -79,7 +79,7 @@
 </head>
 <body>
     <!-- Profile Picture (Fixed URL) -->
-    <img src="https://raw.githubusercontent.com/kaiowns/kaiowns/main/489636305935ca28a5a1c965cd70c527.png" alt="Profile Picture" class="profile-pic">
+    <img src="https://i.imgur.com/aQPiofY.png" alt="Profile Picture" class="profile-pic">
     
     <!-- Name -->
     <h1>kai</h1>
@@ -93,8 +93,8 @@
 
     <!-- Music Controls -->
     <div class="audio-controls">
-        <button id="playPauseBtn">Pause</button>
-        <audio id="bgMusic" autoplay loop>
+        <button id="playPauseBtn">Play</button>
+        <audio id="bgMusic" loop>
             <source src="https://drive.google.com/uc?export=download&id=1ZpHdGVYgXdvr-uENppNzAadZgsMTkdMK" type="audio/mp3">
             Your browser does not support the audio element.
         </audio>
@@ -111,6 +111,13 @@
             } else {
                 audio.pause();
                 playPauseBtn.textContent = "Play";
+            }
+        });
+
+        // Optional: Trigger play on user interaction to bypass autoplay policies
+        document.addEventListener("click", () => {
+            if (audio.paused) {
+                audio.play();
             }
         });
     </script>
